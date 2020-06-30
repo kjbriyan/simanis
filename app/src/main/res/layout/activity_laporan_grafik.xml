@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:layout_height="match_parent"
+    tools:context=".activity_ppspm.LaporanGrafikActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_weight="60"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_weight="75"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_height="match_parent">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_weight="20"
+                    android:paddingLeft="8dp"
+                    android:weightSum="100"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="50"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:text="Si Manis"
+                        android:layout_height="match_parent">
+                    </TextView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#777777" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="50"
+                        android:gravity="center_vertical"
+                        android:textSize="12sp"
+                        android:id="@+id/idUserEmail"
+                        android:text="Concept_Design@yahoo.com"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_weight="80"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:id="@+id/id_img_prof"
+                            android:layout_centerInParent="true"
+                            android:layout_height="60dp"
+                            android:src="@drawable/builder">
+                        </ImageView>
+                    </RelativeLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_weight="25"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:scaleType="fitXY"
+            android:weightSum="2"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:text="Kemajuan Progress Pekerjaan"
+                    android:layout_height="wrap_content">
+
+                </com.google.android.material.textview.MaterialTextView>
+                <com.github.mikephil.charting.charts.PieChart
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:id="@+id/idpie_kontruksi"
+                    android:layout_height="match_parent">
+                </com.github.mikephil.charting.charts.PieChart>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:text="Progress Keuangan"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content">
+
+                </com.google.android.material.textview.MaterialTextView>
+                <com.github.mikephil.charting.charts.PieChart
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:id="@+id/idpie_budgeting"
+                    android:layout_height="match_parent">
+                </com.github.mikephil.charting.charts.PieChart>
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="40"
+        android:weightSum="100"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#777777" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_margin="6dp"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="Total Pekerjaan"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                        <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:text=": "
+                        android:layout_height="wrap_content">
+                    </com.google.android.material.textview.MaterialTextView>
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="XIX"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#777777" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_margin="6dp"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="Total SUB Pekerjaan"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:text=": "
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="40"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#777777" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_margin="6dp"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="Total Nilai Kontrak"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:text=": "
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="Rp. 12.678.000.000,00"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#777777" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_margin="6dp"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="Kemajuan Pekerjaan"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#777777" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_margin="6dp"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="Dikerjakan"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:text=": "
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="55,00 %"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#777777" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_margin="6dp"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="Belum Dikerjakan"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:text=": "
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="45,00 %"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#777777" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_margin="6dp"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="Progres Keuangan"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#777777" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_margin="6dp"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="Terbayar"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:text=": "
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="50,00 %"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#777777" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_margin="6dp"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="Belum Terbayar"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:text=": "
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="50,00 %"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#777777" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3867d6</color>
+    <color name="colorPrimaryDark">#4b7bec</color>
+    <color name="colorAccent">#2d98da</color>
+
+    <!--colors for light mode-->
+    <color name="contentTextColor">#020000</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="backgr">#F4F4F4</color>
+
+    <color name="kuning">#FFCD36</color>
+    <color name="hollowyelow">#fdcb6e</color>
+
+    <color name="mera">#FF3278</color>
+    <color name="hijo">#23BAFF</color>
+
+    <color name="headercard">#0D79BD</color>
+
+</resources>
