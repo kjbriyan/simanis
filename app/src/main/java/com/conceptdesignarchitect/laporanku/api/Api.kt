@@ -118,7 +118,27 @@ interface Api {
     @FormUrlEncoded
     @POST("Lihatminggulalu")
     fun detailLalu(
-        @Field("datavolumeasli") volumeasli: String,
-        @Field("databobotasli") bobotasli : String
+        @Field("idkerja") idkerja: String,
+        @Field("idminggu") idminggu: String
     ):Call <ResponseDetailPekerjaanlalu>
+
+    @FormUrlEncoded
+    @POST("Ubahpassword")
+    fun ubahpass(
+        @Field("id") idkerja: String,
+        @Field("password") idminggu: String
+    ):Call <LoginResponse>
+
+
+    @FormUrlEncoded
+    @POST("Ubahprofil")
+    fun ubahProfil(
+        @Field("id") id: String,
+        @Field("nip") nip : String,
+        @Field("nama") nama: String,
+        @Field("email") email : String
+    ):Call <LoginResponse>
+
+
+
 }

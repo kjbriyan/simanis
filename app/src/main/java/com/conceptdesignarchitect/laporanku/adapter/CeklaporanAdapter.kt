@@ -32,7 +32,6 @@ class CeklaporanAdapter(val data:List<DataLihatlaporanItem>?, val itemCLickliste
             itemView.id_txt_minggu.text = minggu
             val total = "Total Bobot : ${get?.totalBobot} %"
             itemView.id_bobot.text = total
-
             itemView.setOnClickListener { clickListener.onItemClicked(get) }
         }
     }

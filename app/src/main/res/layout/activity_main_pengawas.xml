@@ -349,101 +349,101 @@
                         android:orientation="horizontal"
                         android:layout_height="match_parent">
 
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="25"
-                            android:id="@+id/id_btn_full_name"
-                            android:orientation="vertical">
-                            <androidx.appcompat.widget.LinearLayoutCompat
-                                android:layout_width="match_parent"
-                                android:id="@+id/btnfull"
-                                android:orientation="vertical"
-                                android:layout_height="wrap_content">
-                                <ImageView
-                                    android:layout_width="40dp"
-                                    android:id="@+id/idimg5"
-                                    android:layout_height="40dp"
-                                    android:layout_gravity="center"
-                                    android:src="@drawable/worker"
-                                    android:textAlignment="center">
-                                </ImageView>
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="25"-->
+<!--                            android:id="@+id/id_btn_full_name"-->
+<!--                            android:orientation="vertical">-->
+<!--                            <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:id="@+id/btnfull"-->
+<!--                                android:orientation="vertical"-->
+<!--                                android:layout_height="wrap_content">-->
+<!--                                <ImageView-->
+<!--                                    android:layout_width="40dp"-->
+<!--                                    android:id="@+id/idimg5"-->
+<!--                                    android:layout_height="40dp"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:src="@drawable/worker"-->
+<!--                                    android:textAlignment="center">-->
+<!--                                </ImageView>-->
 
-                            </androidx.appcompat.widget.LinearLayoutCompat>
-                            <TextView
-                                style="@style/reportContentText"
-                                android:padding="8dp"
-                                android:text="Full Name"
-                                android:gravity="center"
-                                android:textAlignment="center"
-                                android:layout_below="@id/btnfull"
-                                android:textColor="#979797"
-                                android:textSize="12sp" />
-                        </RelativeLayout>
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="25"
-                            android:id="@+id/id_btn_email"
-                            android:orientation="vertical">
-                            <androidx.appcompat.widget.LinearLayoutCompat
-                                android:layout_width="match_parent"
-                                android:orientation="vertical"
-                                android:id="@+id/btnm"
-                                android:layout_height="wrap_content">
-                                <ImageView
-                                    android:layout_width="40dp"
-                                    android:id="@+id/idimg6"
-                                    android:layout_height="40dp"
-                                    android:layout_gravity="center"
-                                    android:src="@drawable/email"
-                                    android:textAlignment="center">
-                                </ImageView>
+<!--                            </androidx.appcompat.widget.LinearLayoutCompat>-->
+<!--                            <TextView-->
+<!--                                style="@style/reportContentText"-->
+<!--                                android:padding="8dp"-->
+<!--                                android:text="Full Name"-->
+<!--                                android:gravity="center"-->
+<!--                                android:textAlignment="center"-->
+<!--                                android:layout_below="@id/btnfull"-->
+<!--                                android:textColor="#979797"-->
+<!--                                android:textSize="12sp" />-->
+<!--                        </RelativeLayout>-->
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="25"-->
+<!--                            android:id="@+id/id_btn_email"-->
+<!--                            android:orientation="vertical">-->
+<!--                            <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:orientation="vertical"-->
+<!--                                android:id="@+id/btnm"-->
+<!--                                android:layout_height="wrap_content">-->
+<!--                                <ImageView-->
+<!--                                    android:layout_width="40dp"-->
+<!--                                    android:id="@+id/idimg6"-->
+<!--                                    android:layout_height="40dp"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:src="@drawable/email"-->
+<!--                                    android:textAlignment="center">-->
+<!--                                </ImageView>-->
 
-                            </androidx.appcompat.widget.LinearLayoutCompat>
-                            <TextView
-                                style="@style/reportContentText"
-                                android:layout_gravity="center"
-                                android:padding="8dp"
-                                android:text="Email"
-                                android:gravity="center"
-                                android:textAlignment="center"
-                                android:layout_below="@+id/btnm"
-                                android:textColor="#979797"
-                                android:textSize="12sp" />
-                        </RelativeLayout>
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="25"
-                            android:id="@+id/id_btn_password"
-                            android:orientation="vertical">
-                            <androidx.appcompat.widget.LinearLayoutCompat
-                                android:layout_width="match_parent"
-                                android:orientation="vertical"
-                                android:id="@+id/btnpass"
-                                android:layout_height="wrap_content">
-                                <ImageView
-                                    android:layout_width="40dp"
-                                    android:id="@+id/idimg7"
-                                    android:layout_height="40dp"
-                                    android:layout_gravity="center"
-                                    android:src="@drawable/login"
-                                    android:textAlignment="center">
-                                </ImageView>
+<!--                            </androidx.appcompat.widget.LinearLayoutCompat>-->
+<!--                            <TextView-->
+<!--                                style="@style/reportContentText"-->
+<!--                                android:layout_gravity="center"-->
+<!--                                android:padding="8dp"-->
+<!--                                android:text="Email"-->
+<!--                                android:gravity="center"-->
+<!--                                android:textAlignment="center"-->
+<!--                                android:layout_below="@+id/btnm"-->
+<!--                                android:textColor="#979797"-->
+<!--                                android:textSize="12sp" />-->
+<!--                        </RelativeLayout>-->
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="25"-->
+<!--                            android:id="@+id/id_btn_password"-->
+<!--                            android:orientation="vertical">-->
+<!--                            <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:orientation="vertical"-->
+<!--                                android:id="@+id/btnpass"-->
+<!--                                android:layout_height="wrap_content">-->
+<!--                                <ImageView-->
+<!--                                    android:layout_width="40dp"-->
+<!--                                    android:id="@+id/idimg7"-->
+<!--                                    android:layout_height="40dp"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:src="@drawable/login"-->
+<!--                                    android:textAlignment="center">-->
+<!--                                </ImageView>-->
 
 
-                            </androidx.appcompat.widget.LinearLayoutCompat>
-                            <TextView
-                                style="@style/reportContentText"
-                                android:layout_gravity="center"
-                                android:padding="8dp"
-                                android:text="Password"
-                                android:textAlignment="center"
-                                android:layout_below="@+id/btnpass"
-                                android:textColor="#979797"
-                                android:textSize="12sp" />
-                        </RelativeLayout>
+<!--                            </androidx.appcompat.widget.LinearLayoutCompat>-->
+<!--                            <TextView-->
+<!--                                style="@style/reportContentText"-->
+<!--                                android:layout_gravity="center"-->
+<!--                                android:padding="8dp"-->
+<!--                                android:text="Password"-->
+<!--                                android:textAlignment="center"-->
+<!--                                android:layout_below="@+id/btnpass"-->
+<!--                                android:textColor="#979797"-->
+<!--                                android:textSize="12sp" />-->
+<!--                        </RelativeLayout>-->
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"

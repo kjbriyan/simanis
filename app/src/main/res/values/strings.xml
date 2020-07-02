@@ -3,4 +3,12 @@
     <string name="back">back</string>
     <string name="save">save</string>
     <string name="page_title">Profil</string>
+    <string name="Logout">Logout</string>
+    <string name="ChangePaswword">Change Password</string>
+    <string name="check_password">Check Password</string>
+    <string name="password">Password</string>
+    <string name="now_password">Now Password</string>
+    <string name="new_password">New Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
 </resources>

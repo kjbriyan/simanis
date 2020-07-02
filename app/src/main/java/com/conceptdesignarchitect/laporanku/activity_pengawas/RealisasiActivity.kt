@@ -38,7 +38,7 @@ class RealisasiActivity : AppCompatActivity() {
 
 
     fun onItemClicked(get: DataDetailpekerjaanItem?) {
-        Toast.makeText(this@RealisasiActivity, "klik " + get?.bobot, Toast.LENGTH_LONG).show()
+//        Toast.makeText(this@RealisasiActivity, "klik " + get?.bobot, Toast.LENGTH_LONG).show()
         title = get?.uraianPekerjaan.toString()
         val minggu = intent.getStringExtra("minggu")
         alertdialog(

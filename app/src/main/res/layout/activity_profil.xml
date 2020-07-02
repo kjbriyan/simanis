@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/back"
+            android:id="@+id/tolbar"
             android:backgroundTint="@color/colorPrimary"
             style="@style/Widget.MaterialComponents.Toolbar.Primary"
             android:layout_width="match_parent"
@@ -23,6 +23,7 @@
             app:titleTextColor="@color/whiteTextColor"
             app:titleTextAppearance="@style/Toolbar.TitleText"
             app:navigationIcon="@drawable/ic_arrow_back"
+            app:menu="@menu/menu_tollbar_profil"
             app:title="@string/page_title" />
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -45,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="@dimen/_40sdp">
+            android:paddingTop="@dimen/_20sdp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -75,19 +76,7 @@
                 android:hint="Email"
                 android:textSize="@dimen/_15ssp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_10sdp"
-                android:text="Posisi" />
 
-            <EditText
-                android:id="@+id/et_posisi"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_15sdp"
-                android:hint="Posisi"
-                android:textSize="@dimen/_15ssp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -115,5 +104,18 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
+    <Button
+        android:id="@+id/btn_pasword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/ChangePaswword"
+        android:textColor="@color/whiteTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
